@@ -1,0 +1,41 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Add Property - HostL</title> <link rel="stylesheet" href="style.css"> <script src="script.js" defer></script> </head>
+
+<body>
+
+<nav class="navbar"> <div class="logo-box">H</div> <span class="logo-text">HostL</span> <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<div class="nav-links" id="mobileMenu"> <a href="index.html">Home</a> <a href="properties.html">Explore Properties</a> <a href="add-property.html">Add Property</a> <a href="about.html">About</a> <a href="contact.html">Contact</a> <button onclick="toggleDarkMode()">🌙</button> </div> </nav>
+
+<div class="page-content"> <h2>List a Property</h2>
+
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="form">
+&lt;input 
+  name="title" 
+  placeholder="Property Title" 
+  required 
+&gt;
+&lt;input 
+  name="location" 
+  placeholder="Location" 
+  required 
+&gt;
+&lt;input 
+  name="price" 
+  placeholder="Price" 
+  required 
+&gt;
+&lt;textarea 
+  name="description" 
+  placeholder="Description"
+  rows="4"
+&gt;&lt;/textarea&gt;
+&lt;input 
+  name="images" 
+  placeholder="Image URLs (comma separated)" 
+&gt;
+&lt;button class="btn-primary"&gt;Submit Property&lt;/button&gt;
+</form> </div>
+
+<footer class="footer"> © HostL. All rights reserved. </footer>
+
+</body> </html>
